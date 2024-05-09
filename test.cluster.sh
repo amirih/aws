@@ -2,7 +2,7 @@
 date && find ../ | wc && date
 date && du -sh ../ && date
 date && sh sh.py.sh && date
-date && sh sh.java.sh && date
+date && sh sh.java.sh "unsubmitted_job" && date
 
 echo "installing packages"
 bash sh.pip.sh
