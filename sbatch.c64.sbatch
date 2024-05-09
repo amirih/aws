@@ -1,7 +1,7 @@
 #! /bin/bash
 #SBATCH --mincpus=32
 #SBATCH --mem=412000
-#SBATCH --partition=c64-m512*
+#SBATCH --partition=c64-m512
 directory=$1
 if [ -z "$directory" ]; then
     echo "Usage: $0 <directory>"
@@ -10,4 +10,4 @@ fi
 echo "changing directory to $directory"
 cd $directory
 bash sh.py.sh
-bash sh.java.sh c64-m512
+bash sh.java.sh "c64-m512"

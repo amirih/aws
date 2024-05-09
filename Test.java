@@ -28,8 +28,8 @@ public class Test {
     public static void main(String[] args) {
         // This line prints "Hello, World!" to the console.
         System.out.println("Hello, World!");
-        String machine = args.length > 0 ? args[0] : "local";
-        int id = args.length > 1 ? Integer.parseInt(args[1]) : 0;
+        String machine = args.length > 0 ? args[0] : "random" + (int) (Math.random() * 1000) + "";
+        int id = args.length > 1 ? Integer.parseInt(args[1]) : (int) (Math.random() * 1000);
         System.out.println("machine: " + machine + " id: " + id);
         int counter = 0;
         String output = "machine: " + machine + " id: " + id + " content" + counter;

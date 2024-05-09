@@ -10,4 +10,4 @@ fi
 echo "changing directory to $directory"
 cd $directory
 bash sh.py.sh
-bash sh.java.sh c96-m768
+bash sh.java.sh "c96-m768"
